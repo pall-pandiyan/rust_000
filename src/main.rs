@@ -1,3 +1,11 @@
 fn main() {
-    println!("Hello, world!");
+    println!("Guessing the number!");
+    println!("Please input your guss: ");
+    
+    let mut guess = String::new();
+    std::io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read line");
+
+    println!("You guessed: {guess}");
 }
